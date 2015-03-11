@@ -53,7 +53,6 @@ Actions:
             self.username = args[1]
             MySQLdb.escape_string(self.username)
 
-
             path = os.path.realpath(os.path.curdir)
             path = os.path.join(path, filename)
             if not os.path.isfile(path):
