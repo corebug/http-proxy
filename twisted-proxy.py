@@ -20,8 +20,6 @@ class ConfigError(Exception):
 class Config():
     def __init__(self):
             filename = "server.conf"
-            self.possible_actions = ['add', 'modify', 'delete']
-            self.required_action = None
             self.parser = OptionParser()
             self.parser.add_option("-f", dest="filename", help="proxy server configuration file (default: server.conf)")
             self.help_message = self.parser.format_help()
